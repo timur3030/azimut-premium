@@ -1,15 +1,22 @@
 .footer {
   padding-bottom: 40px;
+  background: #232b3b;
 }
 
 .footer__wrapper {
   padding: 100px;
-  display: grid;
+  /* display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr;
-  column-gap: 100px;
+  column-gap: 100px; */
   border-radius: 40px;
-  background: #665f55;
+  /* background: #665f55; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  row-gap: 100px;
+  align-items: flex-start;
 }
 
 .footer__title {

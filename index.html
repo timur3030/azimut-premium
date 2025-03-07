@@ -90,7 +90,12 @@
       <div class="container">
         <div class="header__wrapper">
           <a href="index.html" class="header__logo">
-            <img src="icons/logo.png" alt="logo" width="100" height="60" />
+            <img
+              src="icons/logo-azimut-horizont.png"
+              alt="logo"
+              width="100"
+              height="60"
+            />
           </a>
           <nav class="header__nav">
             <ul class="header__nav-list">
@@ -115,8 +120,51 @@
         </div>
       </div>
     </header>
+    <section class="promo">
+      <div class="promo__wrapper">
+        <video
+          class="promo__video"
+          src="video/canyon2.mov"
+          autoplay
+          loop
+          playsinline
+          muted="true"
+        ></video>
+        <h1>Путешествуйте свободно и легко вместе с Азимут-Тур</h1>
+        <p>Выбирайте самые легкие и доступные варианты</p>
+      </div>
+    </section>
+    <!-- <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a href="index.html" class="header__logo">
+            <img src="icons/logo.png" alt="logo" width="100" height="60" />
+          </a>
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li><a href="#favourites">Корпоративные Mice туры</a></li>
+              <li><a href="#favourites">Индивидуальные премиум туры</a></li>
+              <li><a href="#favourites">Ивент туры</a></li>
+              <li><a href="#favourites">Галерея</a></li>
+              <li><a href="#about">О нас</a></li>
+              <li><a href="#footer">Контакты</a></li>
+            </ul>
+          </nav>
+          <a class="header__menu-btn" href="coffee.html#menu">
+            <span>Menu</span>
+            <img
+              src="icons/coffee-cup.svg"
+              alt="coffee-cup"
+              width="20"
+              height="20"
+            />
+          </a>
+          <div class="burger"><span></span><span></span></div>
+        </div>
+      </div>
+    </header> -->
 
-    <section class="enjoy">
+    <!-- <section class="enjoy">
       <div class="container">
         <div class="enjoy__wrapper">
           <video
@@ -134,7 +182,7 @@
             <p class="enjoy__descr">
               Выбирайте самые легкие и доступные варианты
             </p>
-            <!-- <a class="enjoy__link" href="coffee.html#menu">
+            <a class="enjoy__link" href="coffee.html#menu">
               <span>Menu</span>
               <img
                 src="icons/coffee-cup.svg"
@@ -142,11 +190,11 @@
                 width="20"
                 height="20"
               />
-            </a> -->
+            </a>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section class="favourites" id="favourites">
       <div class="container">
@@ -229,9 +277,7 @@
 
     <section class="about" id="about">
       <div class="container">
-        <h2 class="about__title">
-          О компании <span>Азимут Премиум.</span>
-        </h2>
+        <h2 class="about__title">О компании <span>Азимут Премиум.</span></h2>
         <p>Здесь подробная информация о компании</p>
         <div class="about__images">
           <div class="about__image one">
@@ -327,74 +373,117 @@
       </div>
     </section>
 
+    <section id="picking-tour-form" class="form">
+      <h2 class="picking__title">Сложно выбрать?</h2>
+      <h2 class="picking__title">Наш эксперт подберет туры для вас</h2>
+      <p class="picking__subtitle">
+        Получите бесплатную консультацию и подборку актуальнрых туров
+      </p>
+      <div id="picking-tour-create-request-form">
+        <form>
+          <div class="picking__form as-flex">
+            <div class="as-col is-24 xs:is-12">
+              <div class="as-select as-name-autocomplete as-form-item">
+                <div class="as-select__input as-input">
+                  <label class="as-input__label"
+                    ><span class="as-input__label-text"> Имя </span>
+                    <!---->
+                    <span class="as-input__box"
+                      ><!---->
+                      <input
+                        type="text"
+                        placeholder="Иванов Иван Иванович"
+                        value=""
+                        name="name"
+                        class="as-input__field"
+                      />
+                      <!---->
+                      <!----></span
+                    >
+                    <!----></label
+                  >
+                </div>
+                <!---->
+                <div class="as-select__dropdown" style="display: none">
+                  <div class="as-select__dropdown-text">Ничего не найдено</div>
+                </div>
+              </div>
+            </div>
+            <div class="as-col is-24 xs:is-12">
+              <div class="as-input-phone as-form-item as-input">
+                <label class="as-input__label"
+                  ><span class="as-input__label-text"> Номер телефона </span>
+                  <!---->
+                  <span class="as-input__box"
+                    ><!---->
+                    <input
+                      type="tel"
+                      placeholder=""
+                      value="+7"
+                      name="phone"
+                      maxlength="18"
+                      class="as-input__field"
+                    />
+                    <!---->
+                    <!----></span
+                  >
+                  <!----></label
+                >
+              </div>
+            </div>
+            <div class="as-col is-24">
+              <div class="as-form-item as-form-item as-input is-label-shifted">
+                <div class="as-input__label">
+                  <div class="as-input__label-text">Куда хотите поехать?</div>
+                  <div class="as-input__box">
+                    <textarea
+                      rows="4"
+                      placeholder="Ваши предпочтения или пожелания..."
+                      value=""
+                      name="comment"
+                      class="as-input__field"
+                      style="height: auto"
+                    ></textarea>
+                  </div>
+                  <!---->
+                </div>
+              </div>
+            </div>
+            <div class="as-col is-24">
+              <div class="picking__submit as-flex is-align-center">
+                <div class="as-col is-24 xs:is-10">
+                  <button
+                    type="submit"
+                    name="submit"
+                    class="as-button is-default is-block is-x-large"
+                  >
+                    <span class="as-button__body"
+                      ><!---->
+                      Отправить заявку
+                      <!----></span
+                    >
+                    <!---->
+                  </button>
+                </div>
+                <div class="as-col is-24 xs:is-14">
+                  <div class="picking__agreement">
+                    Нажимая на кнопку «Отправить заявку», <br />
+                    вы соглашаетесь с
+                    <a href="/privacy" target="_blank">
+                      политикой&nbsp;конфиденциальности
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
     <footer class="footer" id="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <div class="footer__offer">
-            <h3 class="footer__title">
-              Путешествуйте свободно и легко с<br /><span>Azimut Premium</span>
-            </h3>
-            <div class="footer__socials">
-              <a href="#!" class="footer__social">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M23 3.01006C23 3.01006 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 23 3.01006 23 3.01006Z"
-                    stroke="#E1D4C9"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-              <a href="#!" class="footer__social">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
-                    stroke="#E1D4C9"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
-                    stroke="#E1D4C9"
-                  />
-                  <path
-                    d="M17.5 6.51L17.51 6.49889"
-                    stroke="#E1D4C9"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-              <a href="#!" class="footer__social">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"
-                    stroke="#E1D4C9"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
           <div class="footer__contacts">
             <div class="footer__contacts-subtitle">Свяжитесь с нами</div>
             <ul class="footer__contacts-list">
@@ -434,6 +523,66 @@
                 </div>
               </li>
             </ul>
+          </div>
+          <div class="footer__socials">
+            <a href="#!" class="footer__social">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23 3.01006C23 3.01006 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 23 3.01006 23 3.01006Z"
+                  stroke="#E1D4C9"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="#!" class="footer__social">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                  stroke="#E1D4C9"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
+                  stroke="#E1D4C9"
+                />
+                <path
+                  d="M17.5 6.51L17.51 6.49889"
+                  stroke="#E1D4C9"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="#!" class="footer__social">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17 2H14C12.6739 2 11.4021 2.52678 10.4645 3.46447C9.52678 4.40215 9 5.67392 9 7V10H6V14H9V22H13V14H16L17 10H13V7C13 6.73478 13.1054 6.48043 13.2929 6.29289C13.4804 6.10536 13.7348 6 14 6H17V2Z"
+                  stroke="#E1D4C9"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
           </div>
         </div>
       </div>

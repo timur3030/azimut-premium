@@ -16,10 +16,10 @@
 }
 
 @media (max-width: 1365px) {
-  .footer__wrapper {
+  /* .footer__wrapper {
     grid-template-columns: 1fr 0.6fr;
     padding: 100px 60px;
-  }
+  } */
 }
 
 @media (max-width: 1199px) {
