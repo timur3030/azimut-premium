@@ -264,7 +264,7 @@
       <div class="container">
         <h2 class="about__title">О компании <span>Азимут Премиум.</span></h2>
         <p>Здесь подробная информация о компании</p>
-        <div class="about__images">
+        <!-- <div class="about__images">
           <div class="about__image one">
             <img src="img/about/about-1.jpg" alt="img" />
           </div>
@@ -277,11 +277,11 @@
           <div class="about__image four">
             <img src="img/about/about-4.jpg" alt="img" />
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
-    <section class="mobile-app" id="mobile-app">
+    <!-- <section class="mobile-app" id="mobile-app">
       <div class="container">
         <div class="mobile-app__wrapper">
           <div class="mobile-app__text">
@@ -356,30 +356,60 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section id="picking-tour-form" class="form">
-      <h2 class="picking__title">Сложно выбрать?</h2>
-      <h2 class="picking__title">Наш эксперт подберет туры для вас</h2>
-      <p class="picking__subtitle">
-        Получите бесплатную консультацию и подборку актуальнрых туров
-      </p>
-      <div id="picking-tour-create-request-form">
-        <form>
-          <div class="picking__form as-flex">
-            <div class="as-col is-24 xs:is-12">
-              <div class="as-select as-name-autocomplete as-form-item">
-                <div class="as-select__input as-input">
+    <section id="form-tour-form" class="form">
+      <div class="container">
+        <h2 class="form__title">Сложно выбрать?</h2>
+        <h2 class="form__title">Наш эксперт подберет туры для вас</h2>
+        <p class="form__subtitle">
+          Получите бесплатную консультацию и подборку актуальнрых туров
+        </p>
+        <div id="form-tour-create-request-form">
+          <form>
+            <div class="form__form as-flex">
+              <div class="as-col is-24 xs:is-12">
+                <div class="as-select as-name-autocomplete as-form-item">
+                  <div class="as-select__input as-input">
+                    <label class="as-input__label"
+                      ><span class="as-input__label-text"> Имя </span>
+                      <!---->
+                      <span class="as-input__box"
+                        ><!---->
+                        <input
+                          type="text"
+                          placeholder="Иванов Иван Иванович"
+                          value=""
+                          name="name"
+                          class="as-input__field"
+                        />
+                        <!---->
+                        <!----></span
+                      >
+                      <!----></label
+                    >
+                  </div>
+                  <!---->
+                  <div class="as-select__dropdown" style="display: none">
+                    <div class="as-select__dropdown-text">
+                      Ничего не найдено
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="as-col is-24 xs:is-12">
+                <div class="as-input-phone as-form-item as-input">
                   <label class="as-input__label"
-                    ><span class="as-input__label-text"> Имя </span>
+                    ><span class="as-input__label-text"> Номер телефона </span>
                     <!---->
                     <span class="as-input__box"
                       ><!---->
                       <input
-                        type="text"
-                        placeholder="Иванов Иван Иванович"
-                        value=""
-                        name="name"
+                        type="tel"
+                        placeholder=""
+                        value="+7"
+                        name="phone"
+                        maxlength="18"
                         class="as-input__field"
                       />
                       <!---->
@@ -388,81 +418,57 @@
                     <!----></label
                   >
                 </div>
-                <!---->
-                <div class="as-select__dropdown" style="display: none">
-                  <div class="as-select__dropdown-text">Ничего не найдено</div>
-                </div>
               </div>
-            </div>
-            <div class="as-col is-24 xs:is-12">
-              <div class="as-input-phone as-form-item as-input">
-                <label class="as-input__label"
-                  ><span class="as-input__label-text"> Номер телефона </span>
-                  <!---->
-                  <span class="as-input__box"
-                    ><!---->
-                    <input
-                      type="tel"
-                      placeholder=""
-                      value="+7"
-                      name="phone"
-                      maxlength="18"
-                      class="as-input__field"
-                    />
-                    <!---->
-                    <!----></span
-                  >
-                  <!----></label
+              <div class="as-col is-24">
+                <div
+                  class="as-form-item as-form-item as-input is-label-shifted"
                 >
-              </div>
-            </div>
-            <div class="as-col is-24">
-              <div class="as-form-item as-form-item as-input is-label-shifted">
-                <div class="as-input__label">
-                  <div class="as-input__label-text">Куда хотите поехать?</div>
-                  <div class="as-input__box">
-                    <textarea
-                      rows="4"
-                      placeholder="Ваши предпочтения или пожелания..."
-                      value=""
-                      name="comment"
-                      class="as-input__field"
-                      style="height: auto"
-                    ></textarea>
-                  </div>
-                  <!---->
-                </div>
-              </div>
-            </div>
-            <div class="as-col is-24">
-              <div class="picking__submit as-flex is-align-center">
-                <div class="as-col is-24 xs:is-10">
-                  <button
-                    type="submit"
-                    name="submit"
-                    class="as-button is-default is-block is-x-large"
-                  >
-                    <span class="as-button__body"
-                      ><!---->
-                      Отправить заявку
-                      <!----></span
-                    >
+                  <div class="as-input__label">
+                    <div class="as-input__label-text">Куда хотите поехать?</div>
+                    <div class="as-input__box">
+                      <textarea
+                        rows="4"
+                        placeholder="Ваши предпочтения или пожелания..."
+                        value=""
+                        name="comment"
+                        class="as-input__field"
+                        style="height: auto"
+                      ></textarea>
+                    </div>
                     <!---->
-                  </button>
+                  </div>
                 </div>
-                <div class="as-col is-24 xs:is-14">
-                  <div class="picking__agreement">
-                    Нажимая на кнопку «Отправить заявку», <br />
-                    вы соглашаетесь с
-                    <a href="/privacy" target="_blank">
-                      политикой&nbsp;конфиденциальности
-                    </a>
+              </div>
+              <div class="as-col is-24">
+                <div class="form__submit as-flex is-align-center">
+                  <div class="as-col is-24 xs:is-10">
+                    <button
+                      type="submit"
+                      name="submit"
+                      class="as-button is-default is-block is-x-large"
+                    >
+                      <span class="as-button__body"
+                        ><!---->
+                        Отправить заявку
+                        <!----></span
+                      >
+                      <!---->
+                    </button>
+                  </div>
+                  <div class="as-col is-24 xs:is-14">
+                    <div class="form__agreement">
+                      Нажимая на кнопку «Отправить заявку», <br />
+                      вы соглашаетесь с
+                      <a href="/privacy" target="_blank">
+                        политикой&nbsp;конфиденциальности
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </section>
 

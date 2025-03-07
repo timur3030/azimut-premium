@@ -74,6 +74,10 @@
     width: 20px;
   }
 
+  .favourites__arrow {
+    display: none;
+  }
+
   .about__images {
     display: flex;
     flex-direction: column;
@@ -111,9 +115,9 @@
   .favourites__title {
     font-size: 2rem;
   }
-  .favourites__arrow {
+  /* .favourites__arrow {
     display: none;
-  }
+  } */
 
   .about__title {
     font-size: 2rem;
