@@ -4,9 +4,11 @@
   z-index: 99;
   width: 100%;
   padding: 20px 0;
+  background-color: #fff;
   color: #403f3d;
   font-size: 16px;
   line-height: 150%;
+  box-shadow: 0px 29px 21px -23px #00000040;
 }
 
 .header__wrapper {
